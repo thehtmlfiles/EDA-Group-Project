@@ -1,1 +1,23 @@
+#################################################
+## 
+## Exploratory Data Analysis and Visualization
+## Group Project
+##
+#################################################
 
+## Set-up and Read Files
+
+dir()
+getwd()
+setwd() ## Insert the path location inside the parenthesis 
+
+<- read.csv(".csv", header=T)
+summary()
+
+##### Dataset 1 #####
+
+
+##### Dataser 2 #####
+
+
+##### Dataset 3 #####
