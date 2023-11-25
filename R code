@@ -11,11 +11,11 @@ dir()
 getwd()
 setwd() ## Insert the path location inside the parenthesis 
 
-education<- read.csv("education.csv", header=T)
+<- read.csv(".csv", header=T)
 summary()
 
 ##### Dataset 1 #####
-read
+
 
 ##### Dataser 2 #####
 
