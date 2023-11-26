@@ -20,4 +20,23 @@ summary()
 ##### Dataser 2 #####
 
 
-##### Dataset 3 #####
+##### Dataset 3: Diana #####
+
+edattainment_male <- read.csv("educationalattainment_male.csv", header=T)
+summary(edattainment_male)
+
+edattainment_female <- read.csv("educationalattainment_female.csv", header=T)
+summary(edattainment_female)
+
+edattainment_bothsex <-read.csv("educationalattainment_bothsexes.csv", header=T)
+summary(edattainment_bothsex)
+
+edattainment_relationships <-read.csv("educationalattainment_maritalandhouseholdrelationships.csv", header=T)
+summary(edattainment_relationships)
+
+edattainment_status <-read.csv("educationalattainment_Citizenship_Nativity_Year of Entry.csv", header=T)
+summary(edattainment_status)
+
+edattainment_labor <-read.csv("educationalattainment_LaborForce_Occu_Industry.csv", header=T)
+summary(edattainment_labor)
+
