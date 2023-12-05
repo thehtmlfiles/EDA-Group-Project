@@ -23,7 +23,7 @@ salary_filtered <- salary[-row_to_remove2, ]
 
 ## Plots ##
 # Box Plot for Average Salary by State #
-boxplot(salary_filtered$avg_salary ~ salary_filtered$job_state, main = 'Average Salary by State', xlab = 'States', ylab = 'Average Salary (in thousands)', cex.axis = 0.6, col = vangoghcolor)
+boxplot(salary_filtered$avg_salary ~ salary_filtered$job_state, main = 'Average Salary by State', xlab = 'States', ylab = 'Average Salary (in thousands)', cex.axis = 1, col = vangoghcolor, las = 2)
 
 # Box Plot for Average Salary by Different Types of Ownership #
 boxplot(salary_filtered$avg_salary ~ salary_filtered$Type.of.ownership, main = 'Average Salary by Different Types of Ownership', xlab = 'Types of Ownership', ylab = 'Average Salary (in thousands)', cex.axis = 0.5, col = vangoghcolor2)
