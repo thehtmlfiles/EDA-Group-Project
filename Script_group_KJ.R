@@ -65,7 +65,7 @@ ggplot(degrees_that_pay_back, aes(x = `Undergraduate Major`)) +
        color = "Legend") +
   theme_minimal()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
-  geom_hline(yintercept = 55000, linetype = "dashed", color = "blue") +
+  geom_hline(yintercept = 55000, linetype = "dashed", color = "blue") + ## Add horizontal lines at both 55000 and 90000 levels
   geom_hline(yintercept = 90000, linetype = "dashed", color = "red")
 
 
@@ -90,12 +90,13 @@ ggplot(salaries_by_region, aes(x = `Starting Median Salary`, y = `Mid-Career Med
        x = "Starting Median Salary",
        y = "Mid-Career Median Salary")+
   theme_minimal()
-###########################
+########################### Regression model
 
 summary(salaries_by_college_type)
 summary(salaries_by_region)
 merged<-merge(salaries_by_college_type,salaries_by_region,by="School Name")
 
+## fit the linear regression model
 my_model<-lm(`Mid-Career Median Salary.x`~merged$`School Type`+merged$Region+merged$`Starting Median Salary.x`,data = merged)
 
 summary_data <- summary(my_model)
